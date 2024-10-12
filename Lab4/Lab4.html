@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="прізвище, ім'я, група, веб-сторінка, автор, HTML">
+    <meta name="description" content="Лабораторна робота №1 з HTML-5. Сторінка студента із інформацією про себе.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корчуков Д.О., група ІО-23</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 id="name">Корчуков Дмитро Олександрович</h2>
+    <p id="birth">Я народився у місті Кобеляки 23 грудня 2004 року.</p>
+    <p>Закінчив Кобеляцький Ліцей №1, зараз навчаюсь на 3 курсі в КПІ.</p>
+
+    <h3>Мої хобі:</h3>
+    <ul>
+        <li>Воркаут</li>
+        <li>Пауерліфтинг</li>
+        <li>Геймінг</li>
+    </ul>
+
+    <h3>Улюблені фільми:</h3>
+    <ol>
+        <li id="film1">"Інтерстеллар"</li>
+        <li id="film2">"Месники: Фінал"</li>
+        <li id="film3">"Сам удома"</li>
+    </ol>
+
+    <h3>Місто, яке мені сподобалось:</h3>
+    <p>Мені дуже сподобався Львів. Це місто зачаровує своєю архітектурою, культурними пам'ятками та атмосферою старовини. Вулиці Львова просякнуті історією, і кожен куточок має своє особливе значення. Найбільше мене вразили площа Ринок та численні кав'ярні.</p>
+
+    <h3>Фото Львова:</h3>
+    <img src="lviv.webp" alt="Фото Львова" id="lviv-img" width="500">
+
+    <p><a href="https://hotel-edem.lviv.ua/ru/putevoditel-po-lvovu/" target="_blank">Посилання на фото</a></p>
+
+    <!-- Кнопки для завдання 2 -->
+    <div id="image-controls">
+        <button id="add-img">Додати зображення</button>
+        <button id="increase-img">Збільшити зображення</button>
+        <button id="decrease-img">Зменшити зображення</button>
+        <button id="remove-img">Видалити зображення</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
