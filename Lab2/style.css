@@ -1,3 +1,4 @@
+/* Стилі для таблиці */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -22,7 +23,6 @@ tr:nth-child(2) {
     color: #333333; 
 }
 
-
 tr:nth-child(1):hover {
     background-color: #f5f5c5; 
     color: #333333; 
@@ -33,11 +33,12 @@ tr:nth-child(2):hover {
     color: #ffffff; 
 }
 
-
+/* Стилі для кіл */
 .circle-container {
     position: relative;
     width: 200px;
     height: 200px;
+    display: inline-block;
 }
 
 .circle {
@@ -65,4 +66,9 @@ tr:nth-child(2):hover {
     background-color: green;
     top: 50px;
     left: 90px;
+}
+
+/* Другий набір кіл */
+.second-set {
+    transform: translateX(220px);
 }
