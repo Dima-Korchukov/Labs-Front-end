@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container form-container">
+        <h2>Форма для заповнення</h2>
+        <form id="myForm">
+            <label for="name">ПІБ:</label>
+            <input type="text" id="name" name="name" placeholder="ТТТТТТТ Т.Т.">
+            
+            <label for="group">Група:</label>
+            <input type="text" id="group" name="group" placeholder="ТТ-ЧЧ">
+            
+            <label for="variant">Варіант:</label>
+            <input type="text" id="variant" name="variant" placeholder="Варіант">
+            
+            <label for="phone">Телефон:</label>
+            <input type="text" id="phone" name="phone" placeholder="(ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ">
+            
+            <label for="email">Пошта:</label>
+            <input type="email" id="email" name="email" placeholder="тттттт@ттттт.com">
+            
+            <button type="button" onclick="validateForm()">Підтвердити</button>
+        </form>
+        <div id="errorMessages" class="error"></div>
+        <div class="form-right">
+            <h3>Введені дані</h3>
+            <p>ПІБ: <span id="outputName"></span></p>
+            <p>Група: <span id="outputGroup"></span></p>
+            <p>Варіант: <span id="outputVariant"></span></p>
+            <p>Телефон: <span id="outputPhone"></span></p>
+            <p>Пошта: <span id="outputEmail"></span></p>
+        </div>
+    </div>
+
+    <div class="container table-container">
+        <h1>Таблиця завдання 2</h1>
+        <div class="color-picker-container">
+            <input type="color" id="colorPicker" value="#ff0000">
+        </div>
+        <table id="myTable"></table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
