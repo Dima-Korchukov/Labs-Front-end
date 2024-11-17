@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+}
+
+.goods-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Відстань між картками */
+}
+
+.goods-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block; /* Дозволяє карткам підлаштовуватися під вміст */
+  width: auto;
+  height: auto;
+}
+
+.goods-card:hover {
+  transform: scale(1.05); /* Збільшення картки при наведенні */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.goods-card img {
+  width: 100%;           /* Картинка займає всю доступну ширину */
+  height: 200px;         /* Висота обмежена до 200px */
+  object-fit: cover;     /* Масштабування зображення, щоб воно заповнювало блок */
+  object-position: center; /* Центрування зображення, якщо його співвідношення не збігається з контейнером */
+}
+
+.goods-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.goods-card p {
+  font-size: 1.2rem;
+  color: #333;
+}
