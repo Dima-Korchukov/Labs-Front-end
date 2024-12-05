@@ -393,3 +393,60 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+/* Responsive Styles */
+/* Mobile Devices */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-section .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .offers-container {
+        flex-direction: column;
+    }
+
+    .offer-card {
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .about-section {
+        padding: 3rem 1rem;
+    }
+
+    .offers-container {
+        gap: 1rem;
+    }
+
+    .offer-card {
+        width: 45%;
+    }
+}
+
+/* Wide Screens */
+@media (min-width: 1400px) {
+    .hero-section .hero-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .offer-card {
+        width: 30%;
+    }
+}
+
+
