@@ -379,16 +379,16 @@ nav .cta-button:hover {
   }
   
   .food-text h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     color: #333;
   }
   
   .food-text p {
-    color: #555;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+    color: #555;
   }
   
   .food-text a {
